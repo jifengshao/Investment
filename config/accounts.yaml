@@ -1,0 +1,25 @@
+accounts:
+  - id: 401k
+    type: tax_advantaged
+    cash: 0
+    holdings:
+      BND: 600000
+      BNDX: 150000
+      VNQ: 150000
+      VBR: 300000
+      VTI: 800000
+
+  - id: taxable
+    type: taxable
+    cash: 0
+    holdings:
+      VTI: 400000
+      VXUS: 600000
+      QQQ: 200000
+      AAPL: 80000
+      MSFT: 80000
+      NVDA: 80000
+      AMZN: 80000
+      GOOGL: 80000
+      META: 80000
+      TSLA: 80000

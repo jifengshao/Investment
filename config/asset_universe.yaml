@@ -1,0 +1,39 @@
+assets:
+  # Core ETFs
+  VTI:  {asset_type: etf, sleeve: core, tax_efficiency: high}
+  VXUS: {asset_type: etf, sleeve: core, tax_efficiency: high}
+  BND:  {asset_type: etf, sleeve: core, tax_efficiency: low, stabilizer: true}
+  BNDX: {asset_type: etf, sleeve: core, tax_efficiency: low, stabilizer: true}
+  VNQ:  {asset_type: etf, sleeve: core, tax_efficiency: low}
+  VBR:  {asset_type: etf, sleeve: core, tax_efficiency: medium}
+
+  # Growth ETF
+  QQQ:  {asset_type: etf, sleeve: growth, tax_efficiency: high}
+
+  # Magnificent 7 (examples)
+  AAPL: {asset_type: stock, sleeve: growth, tax_efficiency: high}
+  MSFT: {asset_type: stock, sleeve: growth, tax_efficiency: high}
+  NVDA: {asset_type: stock, sleeve: growth, tax_efficiency: high}
+  AMZN: {asset_type: stock, sleeve: growth, tax_efficiency: high}
+  GOOGL:{asset_type: stock, sleeve: growth, tax_efficiency: high}
+  META: {asset_type: stock, sleeve: growth, tax_efficiency: high}
+  TSLA: {asset_type: stock, sleeve: growth, tax_efficiency: high}
+
+targets:
+  # Core (75%)
+  VTI: 0.30
+  VXUS: 0.15
+  VBR: 0.075
+  BND: 0.15
+  BNDX: 0.0375
+  VNQ: 0.0375
+
+  # Growth sleeve (25%)
+  QQQ: 0.10
+  AAPL: 0.0214286
+  MSFT: 0.0214286
+  NVDA: 0.0214286
+  AMZN: 0.0214286
+  GOOGL: 0.0214286
+  META: 0.0214286
+  TSLA: 0.0214286

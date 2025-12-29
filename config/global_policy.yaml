@@ -1,0 +1,22 @@
+sleeves:
+  core_target: 0.75
+  core_min: 0.65
+  growth_target: 0.25
+  growth_max: 0.30
+
+stabilizer:
+  min_pct_total: 0.15
+  stabilizer_tickers: ["BND", "BNDX"]
+
+rebalance:
+  drift_absolute: 0.05
+  drift_relative: 0.20
+
+growth:
+  max_single_stock_weight: 0.10
+  trim_multiple_of_target: 2.0
+  prohibit_leveraged: true
+
+taxable:
+  buy_first_sell_last: true
+  avoid_short_term_days: 365
