@@ -16,6 +16,7 @@ growth:
   max_single_stock_weight: 0.10
   trim_multiple_of_target: 2.0
   prohibit_leveraged: true
+  qqq_or_spyg_exclusive: true  # Choose either QQQ or SPYG, not both
 
 taxable:
   buy_first_sell_last: true

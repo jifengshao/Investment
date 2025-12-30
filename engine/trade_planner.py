@@ -1,16 +1,30 @@
+"""Trade planning engine.
+
+Plans trades to rebalance a portfolio based on drift detection,
+respecting tax-aware account selection and asset-location heuristics.
+"""
 from __future__ import annotations
+
 from dataclasses import dataclass
-from typing import List, Dict
-from portfolio.portfolio import Portfolio
+from typing import Dict, List, Optional
+
 from policy.types import AssetMeta
+from portfolio.portfolio import Portfolio
+
 
 @dataclass(frozen=True)
 class Trade:
+    """A recommended trade action."""
+
     account_id: str
     ticker: str
     action: str  # BUY/SELL
     value: float
     reason: str
+
+    def __str__(self) -> str:
+        """Format trade for display."""
+        return f"{self.account_id}: {self.action} ${self.value:,.0f} {self.ticker}"
 
 def select_best_account(portfolio: Portfolio, ticker: str) -> str:
     meta: AssetMeta | None = portfolio.asset_meta.get(ticker)

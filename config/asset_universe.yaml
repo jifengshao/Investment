@@ -15,7 +15,7 @@ assets:
   MSFT: {asset_type: stock, sleeve: growth, tax_efficiency: high}
   NVDA: {asset_type: stock, sleeve: growth, tax_efficiency: high}
   AMZN: {asset_type: stock, sleeve: growth, tax_efficiency: high}
-  GOOGL:{asset_type: stock, sleeve: growth, tax_efficiency: high}
+  GOOGL: {asset_type: stock, sleeve: growth, tax_efficiency: high}
   META: {asset_type: stock, sleeve: growth, tax_efficiency: high}
   TSLA: {asset_type: stock, sleeve: growth, tax_efficiency: high}
 
